@@ -41,7 +41,7 @@ xhr.onload = function() {
 	var myDiv = document.createElement("div");
 
 //Set its unique ID.
-myDiv.id = 'div_id';
+myDiv.id = 'cl_modal';
 
 //Add your content to the DIV
 myDiv.innerHTML = xhr.response;
@@ -49,27 +49,27 @@ myDiv.innerHTML = xhr.response;
 //Finally, append the element to the HTML body
 document.body.appendChild(myDiv);
 
-const openEl = document.getElementsByClassName("open-modal")[0];
-const closeEl = document.getElementsByClassName("close-modal")[0];
+const openEl = document.getElementsByClassName("open-ck-modal")[0];
+const closeEl = document.getElementsByClassName("close-ck-modal")[0];
 const isVisible = "is-visible";
 
 openEl.addEventListener("click", function(e) {
-    document.getElementById('modal1').classList.add(isVisible);
+    document.getElementById('ckModal').classList.add(isVisible);
 }, false);
 
 closeEl.addEventListener("click", function(e) {
-    document.getElementById('modal1').classList.remove(isVisible);
+    document.getElementById('ckModal').classList.remove(isVisible);
 }, false);
 document.addEventListener("click", e => {
-  if (e.target == document.querySelector(".modal.is-visible")) {
-    document.querySelector(".modal.is-visible").classList.remove(isVisible);
+  if (e.target == document.querySelector(".clmodal.is-visible")) {
+    document.querySelector(".clmodal.is-visible").classList.remove(isVisible);
   }
 });
 
 document.addEventListener("keyup", e => {
   // if we press the ESC
-  if (e.key == "Escape" && document.querySelector(".modal.is-visible")) {
-    document.querySelector(".modal.is-visible").classList.remove(isVisible);
+  if (e.key == "Escape" && document.querySelector(".clmodal.is-visible")) {
+    document.querySelector(".clmodal.is-visible").classList.remove(isVisible);
   }
 });
 };
