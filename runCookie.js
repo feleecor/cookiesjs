@@ -24,7 +24,7 @@ ready(function() {
       description: "Acest site folosește cookies. Prin continuarea utilizării site-ului, vă exprimați acordul cu privire la modulele noastre cookie.",
       link: "",
       href: "#",
-      button: "Am inteles!",
+      button: "Am înțeles!",
     },
     onAccept: function () {
     }
