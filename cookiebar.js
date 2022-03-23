@@ -186,7 +186,7 @@ localStorage.setItem(cname, 'yes');
       '<div class="${cls}-content">' +
       '<div class="${cls}-desciption">${des}</div>' +
       '<div class="${cls}-link">' +
-      '<a href="#" class="open-modal" >Citește mai mult</a>' +
+      '<a href="#" class="open-ck-modal" >Citește mai mult</a>' +
       '</div>' +
       '</div>' +
       '<div class="${cls}-more" style="display: none;">${more}</div>' +
