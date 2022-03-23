@@ -2,7 +2,7 @@
   <div class="ckmodal-dialog">
     <header class="ckmodal-header">
       The header of the first modal
-      <button class="ckclose-modal" data-close>
+      <button class="close-ck-modal" data-close>
         ✕  
       </button>
     </header>
