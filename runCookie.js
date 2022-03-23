@@ -34,7 +34,7 @@ ready(function() {
 
 
 let xhr = new XMLHttpRequest();
-xhr.open('get', 'http://balnak.dreamweb.ro/cookies/policy.pol');
+xhr.open('get', 'https://raw.githubusercontent.com/feleecor/cookiesjs/main/policy.pol');
 xhr.send();
 
 xhr.onload = function() {
